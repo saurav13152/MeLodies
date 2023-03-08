@@ -1,24 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 *{
     padding: 0;
     margin: 0;
 }
+
 body{
-    font-family: 'Ubuntu', sans-serif;
-    background-color: blueviolet;
+   
+    background-color: rgb(119, 194, 8)
 }
+
 .brand img{
-    width: 40px;
-    
-    
+    width: 40px;   
+}
+fa-play{
+     color: aqua; 
 }
 
 nav{
-
+    font-family: 'Ubuntu', sans-serif;
 }
 nav ul{
     display: flex;
-    padding: 0 10px;
+    align-items: center;
     list-style-type: none;
+    background-color: black;
+    color: aliceblue;
+    height: 55px;
+}
+nav ul li{
+    padding: 0 10px;
+}
+
+.container{
+    min-height: 70vh;
+    color :white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(48, 48, 168);
+    display:flex;
+    margin:23px auto;
+    width:75%;
+    background-image: url(music-player.jpg);
+}
+.container h1{
+    margin: 0 10px;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor:pointer;
+    
+}
+
+.icons{
+    margin: 20px 0;
+}
+.icons i{
+    cursor:pointer;
+}
+
+.bottom{
+    position:sticky;
+    height:100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.songItem{
+ height: 50px;
+display: flex;
+background-color: white;
+width: 80%;
+color: black;
+margin: 12px 5px;
+justify-content: space-between;
+align-items: center;
+}
+.songItem img{
+    width:50px;
+    margin:0 23px;
+}
+
+.songItemContainer{
+    margin:30px 0;
 }
