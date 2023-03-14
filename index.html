@@ -7,11 +7,12 @@
     <title>Spotify_Clone</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/4fbfd190d2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="musiclogo.jpg" type="image/x-icon"/>
 </head>
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="logo_spotify.png" alt="Spotify"></li>
+            <li class="brand"><img src="spotifylogo3.png" alt="Spotify"></li>
             <li>Home</li>
             <li>About</li>
         </ul>
@@ -19,78 +20,45 @@
 
     <div class="container"> 
         <div class="songList">
-            <h1>Best of NCS- No copyright Sounds</h1>
+            <h1>Enjoy your FAV Music</h1>
             <div class="songItemContainer">
                 <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
+                    <img src="covers/1.jpg" alt="1" >
+                    <span class="songName">Hare Krishna Hare ram</span>
                     <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
+                        <i id="0" class="fa-solid  songItemPlay fa-play"></i>
                       </span> </span>
                 </div>
                 <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
+                    <img alt="1" >
+                    <span class="songName">Habibi-Remix</span>
                     <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
+                        <i id="1" class="fa-solid songItemPlay fa-play"></i>
                       </span> </span>
                 </div>
                 <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
+                    <img alt="1" >
+                    <span class="songName">Paisa Hai To</span>
                     <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
+                        <i  id="2"class="fa-solid songItemPlay fa-play"></i>
                       </span> </span>
                 </div>
                 <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
+                    <img alt="1" >
+                    <span class="songName">Sigma Rule</span>
                     <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
+                        <i  id="3"class="fa-solid songItemPlay fa-play"></i>
                       </span> </span>
                 </div>
                 <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
+                    <img alt="1" >
+                    <span class="songName">You and I-Katty Perry</span>
                     <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
+                        <i id="4" class="fa-solid  songItemPlay fa-play"></i>
                       </span> </span>
                 </div>
-                <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
-                    <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
-                      </span> </span>
-                </div>
-                <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
-                    <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
-                      </span> </span>
-                </div>
-                <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
-                    <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
-                      </span> </span>
-                </div>
-                <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
-                    <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
-                      </span> </span>
-                </div>
-                <div class="songItem">
-                    <img src="first_song.jpg" alt="1" >
-                    <span>Hare Krishna Hare ram</span>
-                    <span class="songListplay"><span class="timestamp">05:00</span> <span style="font-size: 20px; color: Tomato; padding: 5px;">
-                        <i class="fa-solid fa-play"></i>
-                      </span> </span>
-                </div>
+               
+               
 
             </div>
         </div>
@@ -99,16 +67,18 @@
     </div>
 
     <div class= "bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
 
         <div class="icons">
             <!-- fontawsome icons -->
             <span style="font-size: 40px; color: Tomato;">
                 <i class="fa-solid fa-backward-step"></i>
             </span>
+
             <span style="font-size: 40px; color: Tomato;">
-                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-play" id="masterPlay"></i>
               </span>
+
             <span style="font-size: 40px; color: Tomato;">
                 <i class="fa-solid fa-forward-step"></i>
               </span>

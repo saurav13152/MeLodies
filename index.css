@@ -18,6 +18,8 @@ fa-play{
 
 nav{
     font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;
 }
 nav ul{
     display: flex;
@@ -26,19 +28,19 @@ nav ul{
     background-color: black;
     color: aliceblue;
     height: 55px;
-}
+     }
 nav ul li{
     padding: 0 10px;
 }
 
 .container{
-    min-height: 70vh;
+    min-height: 80vh;
     color :white;
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(48, 48, 168);
     display:flex;
     margin:23px auto;
-    width:75%;
+    width:80%;
     background-image: url(music-player.jpg);
 }
 .container h1{
@@ -46,35 +48,40 @@ nav ul li{
 }
 
 #myProgressBar{
-    width: 80vw;
+    width: 60vw;
     cursor:pointer;
+    position: absolute;
+    top: 5px;
     
 }
 
 .icons{
     margin: 20px 0;
+    position: absolute;
+    top: 13px;
 }
 .icons i{
     cursor:pointer;
 }
 
 .bottom{
-    position:sticky;
-    height:100px;
+    position: sticky;
+    height: 90px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    bottom: 0;
 }
 
 .songItem{
  height: 50px;
 display: flex;
 background-color: white;
-width: 80%;
+width: 100%;
 color: black;
-margin: 12px 5px;
+margin: 22px 5px;
 justify-content: space-between;
 align-items: center;
 }
@@ -84,5 +91,9 @@ align-items: center;
 }
 
 .songItemContainer{
-    margin:30px 0;
+    margin:40px 0;
+}
+
+.songItemPlay{
+    cursor: pointer;
 }
