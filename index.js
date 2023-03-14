@@ -6,11 +6,11 @@ let myProgressBar=document.getElementById("myProgressBar");
 let songItem=Array.from (document.getElementsByClassName("songItem"));
 
 let songs=[
-    {songName:"Hare Krishna Hare Ram", filePath:"songs/1.mp3",coverPath:"covers/1.jpg"},
-    {songName:"Habibi Remix", filePath:"songs/2.mp3",coverPath:"covers/2.jfif"},
-    {songName:"Paisa Hai to", filePath:"songs/3.mp3",coverPath:"covers/3.jfif"},
-    {songName:"Sigma Rule", filePath:"songs/4.mp3",coverPath:"covers/4.jfif"},
-    {songName:"You and I -Katty Perry", filePath:"songs/5.mp3",coverPath:"covers/5.jfif"},
+    {songName:"Hare Krishna Hare Ram", filePath:"./songs/1.mp3",coverPath:"./covers/1.jpg"},
+    {songName:"Habibi Remix", filePath:"./songs/2.mp3",coverPath:"./covers/2.jfif"},
+    {songName:"Paisa Hai to", filePath:"./songs/3.mp3",coverPath:"./covers/3.jfif"},
+    {songName:"Sigma Rule", filePath:"./songs/4.mp3",coverPath:"./covers/4.jfif"},
+    {songName:"You and I -Katty Perry", filePath:"./songs/5.mp3",coverPath:"./covers/5.jfif"},
    
 ];
 
@@ -63,7 +63,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
         songIndex=parseInt(e.target.id);
         e.target.classList.remove("fa-play")
         e.target.classList.add("fa-pause")
-        audioElement.src=`songs/${songIndex+1}.mp3`;
+        audioElement.src=`./songs/${songIndex+1}.mp3`;
         audioElement.currentTime=0;
         audioElement.play();
         masterPlay.classList.remove("fa-play");
@@ -79,7 +79,7 @@ document.getElementById("next").addEventListener("click" ,()=>{
     else{
         songIndex+=1
     }
-    audioElement.src=`songs/${songIndex+1}.mp3`;
+    audioElement.src=`./songs/${songIndex+1}.mp3`;
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.remove("fa-play");
@@ -96,7 +96,7 @@ document.getElementById("previous").addEventListener("click" ,()=>{
     else{
         songIndex-=1
     }
-    audioElement.src=`songs/${songIndex+1}.mp3`;
+    audioElement.src=`./songs/${songIndex+1}.mp3`;
     audioElement.currentTime=0;
     audioElement.play();
     masterPlay.classList.remove("fa-play");
