@@ -58,7 +58,7 @@ const makeAllPlays=()=>{
 // Important 
 Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
     element.addEventListener("click" , (e)=>{
-         console.log(element);
+        //  console.log(element);
         makeAllPlays();
         songIndex=parseInt(e.target.id);
         e.target.classList.remove("fa-play")

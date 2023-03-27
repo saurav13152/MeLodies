@@ -30,7 +30,7 @@ nav ul{
     height: 55px;
      }
 nav ul li{
-    padding: 0 10px;
+    padding: 20px;
 }
 
 .container{
@@ -81,7 +81,7 @@ display: flex;
 background-color: white;
 width: 100%;
 color: black;
-margin: 22px 5px;
+margin: 22px 40px;
 justify-content: space-between;
 align-items: center;
 }
@@ -96,4 +96,20 @@ align-items: center;
 
 .songItemPlay{
     cursor: pointer;
+}
+
+#home:hover{
+cursor: pointer;
+color:darkcyan;
+
+}
+
+#about:hover{
+cursor: pointer;
+color:darkcyan
+}
+
+.songItem:hover{
+    background-color: rgb(252, 248, 22);
+    transform: scale(1.2,1.2);
 }
